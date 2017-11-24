@@ -5,7 +5,7 @@ import GuestList from './GuestList';
 class App extends Component {
 
   state = {
-    guest: [
+    guests: [
       {
         name: 'Treasure',
         isConfirmed: false
@@ -55,7 +55,7 @@ class App extends Component {
             </tr>
           </tbody>
         </table>
-        <GuestList />
+        <GuestList guests={this.state.guests} />
       </div>
     </div>
     );
