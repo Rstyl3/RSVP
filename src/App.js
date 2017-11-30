@@ -86,8 +86,9 @@ class App extends Component {
   
   getAttendingGuests = () => 
      this.state.guests.reduce(
-                        (total,guest) => guest.isConfirmed ? total + 1 : total
-                       ,0);
+          (total,guest) => guest.isConfirmed ? total + 1 : total
+          ,0
+     );
 
 
   render() {
